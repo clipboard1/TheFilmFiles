@@ -4,8 +4,13 @@ body {
 
 header {
     background-color: #343a40;
-    padding: 20px;
+    padding: 5px;
     color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 header h1 {
@@ -74,3 +79,14 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+#trailer {
+    padding: 40px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  #player {
+    max-width: 60%;
+    margin: 0 auto;
+  }
