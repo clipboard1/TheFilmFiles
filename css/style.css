@@ -1,5 +1,5 @@
 body {
-    background-color: #f8f9fa;
+    background-color: #f6f9fa;
 }
 
 header {
@@ -11,6 +11,7 @@ header {
 header h1 {
     margin: 0;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -45,7 +46,10 @@ section {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    color:#343a40
+    color: #343a40;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .series-card img {
@@ -55,9 +59,15 @@ section {
     margin-bottom: 20px;
 }
 
+.series-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 footer {
     background-color: #343a40;
     padding: 20px;
     color: white;
     text-align: center;
 }
+
