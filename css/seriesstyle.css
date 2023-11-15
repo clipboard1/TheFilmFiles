@@ -38,7 +38,8 @@ footer {
     color: white;
     text-align: center;
 }
-.col-md-6 img{
+
+.col-md-6 img {
     height: 800px;
     width: auto;
 }
@@ -57,6 +58,9 @@ footer {
     background-color: white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .cast-member img {
@@ -64,4 +68,9 @@ footer {
     height: auto;
     object-fit: cover;
     margin-bottom: 10px;
+}
+
+.cast-member.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
