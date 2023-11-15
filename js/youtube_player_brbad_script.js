@@ -21,11 +21,8 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-// Когда плеер готов
 function onPlayerReady(event) {
-  event.target.playVideo();
 }
 
-// Когда состояние плеера изменяется
 function onPlayerStateChange(event) {
 }
