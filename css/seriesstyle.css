@@ -46,9 +46,15 @@ footer {
     text-align: center;
 }
 
+.col-md-6 {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
 .col-md-6 img {
-    height: 800px;
-    width: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .cast-container {
@@ -86,9 +92,9 @@ footer {
     padding: 40px;
     background-color: #f8f9fa;
     text-align: center;
-  }
-  
-  #player {
+}
+
+#player {
     max-width: 60%;
     margin: 0 auto;
-  }
+}
